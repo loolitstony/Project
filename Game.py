@@ -8,8 +8,9 @@ wn.tracer(0)
 
 color = str(input('Enter color (player 1): '))
 color2 = str(input('Enter color (player 2): '))
+player = str(input("Enter name (player1): "))
+player2 = str(input("Enter name (player2): "))
 
-#patka
 # резултат - променливи
 score_a = 0
 score_b = 0
@@ -49,7 +50,7 @@ pen.color("white")
 pen.penup()
 pen.hideturtle()
 pen.goto(0, 260)
-pen.write(f"Player ONE: 0  Player TWO: 0", align="center", font=("Courier", 24, "normal"))
+pen.write(f"{player}: 0  {player2}: 0", align="center", font=("Courier", 24, "normal"))
 
 # Движения на хилката
 def paddle_a_up():
