@@ -109,7 +109,7 @@ while True:
     if ball.xcor() > 370:
         score_a += 1
         pen.clear()
-        pen.write("Player ONE: {}  Player TWO: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+        pen.write("{}: {}  {}: {}".format(player, score_a, player2, score_b), align="center", font=("Courier", 24, "normal"))
         ball.goto(0, 0)
         paddle_a.goto(-350, 0)
         paddle_b.goto(350, 0)
@@ -119,7 +119,7 @@ while True:
     elif ball.xcor() < -370:
         score_b += 1
         pen.clear()
-        pen.write("Player ONE: {}  Player TWO: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+        pen.write("{}: {}  {}: {}".format(player, score_a, player2, score_b), align="center", font=("Courier", 24, "normal"))
         ball.goto(0, 0)
         paddle_a.goto(-350, 0)
         paddle_b.goto(350, 0)
