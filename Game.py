@@ -9,6 +9,7 @@ wn.tracer(0)
 color = str(input('Enter color (player 1): '))
 color2 = str(input('Enter color (player 2): '))
 
+#patka
 # резултат - променливи
 score_a = 0
 score_b = 0
